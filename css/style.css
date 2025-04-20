@@ -1,0 +1,374 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fdfaf6;
+  color: #3d2a1d;
+  line-height: 1.6;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+/* LOGO */
+.logo {
+  width: 150px;
+  margin-bottom: 25px;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(to right, #fef7f2, #f5eee6);
+  text-align: center;
+  border-bottom: 3px solid #ecd6c4;
+  padding: 80px 20px 60px;
+}
+
+.hero-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.hero-esquerda {
+  flex: 1 1 60%;
+}
+
+.hero-direita {
+  flex: 1 1 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.titulo {
+  font-size: 3rem;
+  font-family: 'Georgia', serif;
+  color: #5e260d;
+  margin-bottom: 8px;
+  letter-spacing: -1px;
+}
+
+.titulo span {
+  display: block;
+  font-weight: bold;
+  font-size: 3.2rem;
+  color: #a1691c;
+}
+
+.subtitulo {
+  font-size: 1.3rem;
+  color: #6a4f3a;
+  margin-bottom: 20px;
+}
+
+.curso-label {
+  display: inline-block;
+  background-color: #fff5e6;
+  padding: 8px 16px;
+  color: #a1691c;
+  font-weight: 700;
+  border-radius: 25px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.info-curso {
+  font-size: 1.1rem;
+  color: #5d4037;
+  margin-top: 10px;
+}
+
+/* BOTÕES */
+.btn-whatsapp,
+.btn-inscrever {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25d366;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 14px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  gap: 10px;
+  transition: 0.3s ease;
+  margin-top: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.btn-inscrever {
+  background-color: #a1691c;
+}
+
+.btn-whatsapp:hover,
+.btn-inscrever:hover {
+  transform: translateY(-2px);
+  background-color: #1eba5a;
+}
+
+/* VAGAS */
+.badge-vagas {
+  display: inline-block;
+  margin: 10px 0 20px;
+  background-color: #e53935;
+  color: white;
+  font-weight: bold;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 12px rgba(229, 57, 53, 0.3);
+}
+
+/* SOBRE */
+.sobre-curso {
+  background-color: #fff9f3;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.certificacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  color: #795548;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.certificacao img {
+  width: 28px;
+}
+
+.frase-impacto {
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 500;
+  color: #5d4037;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* PROGRAMAÇÃO */
+.programacao {
+  background-color: #fef4e6;
+  padding: 60px 20px;
+}
+
+.programacao h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #5e260d;
+}
+
+.dia {
+  margin-bottom: 40px;
+}
+
+.dia h3 {
+  font-size: 1.4rem;
+  color: #a1691c;
+  margin-bottom: 12px;
+}
+
+.dia ul {
+  padding-left: 20px;
+  color: #4a2d18;
+  line-height: 1.8;
+}
+
+/* INFORMAÇÕES */
+.informacoes {
+  background-color: #fefefe;
+}
+
+.informacoes h2 {
+  font-size: 1.8rem;
+  color: #5e260d;
+  margin-bottom: 16px;
+}
+
+.informacoes h3 {
+  margin-top: 24px;
+  color: #7e4b1d;
+}
+
+.informacoes p,
+.informacoes ul {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #4a2d18;
+}
+
+.informacoes ul {
+  padding-left: 20px;
+}
+
+/* PROFESSORAS */
+.professoras {
+  background-color: #fce9da;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.prof {
+  text-align: center;
+}
+
+.prof img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50% 50% 0 0;
+  object-fit: cover;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.prof p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #4a2d18;
+}
+
+/* ============================== */
+/* 📱 RESPONSIVO - MOBILE FIRST   */
+/* ============================== */
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 40px 20px;
+  }
+
+  .titulo {
+    font-size: 2.4rem;
+  }
+
+  .titulo span {
+    font-size: 2.6rem;
+  }
+
+  .btn-whatsapp,
+  .btn-inscrever {
+    padding: 12px 20px;
+    font-size: 0.95rem;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-esquerda,
+  .hero-direita {
+    width: 100%;
+  }
+
+  .prof {
+    margin-bottom: 20px;
+  }
+
+  .prof img {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 2.1rem;
+  }
+
+  .titulo span {
+    font-size: 2.3rem;
+  }
+
+  .subtitulo {
+    font-size: 1.1rem;
+  }
+
+  .info-curso {
+    font-size: 1rem;
+  }
+
+  .btn-whatsapp,
+  .btn-inscrever {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+
+  .badge-vagas {
+    font-size: 0.8rem;
+    padding: 6px 16px;
+  }
+
+  .certificacao {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .dia h3 {
+    font-size: 1.3rem;
+  }
+
+  .programacao h2,
+  .informacoes h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo {
+    font-size: 1.9rem;
+  }
+
+  .titulo span {
+    font-size: 2.1rem;
+  }
+
+  .subtitulo {
+    font-size: 1rem;
+  }
+
+  .btn-whatsapp,
+  .btn-inscrever {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .prof img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .frase-impacto {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .programacao h2,
+  .informacoes h2 {
+    font-size: 1.4rem;
+  }
+
+  .dia h3 {
+    font-size: 1.2rem;
+  }
+}
